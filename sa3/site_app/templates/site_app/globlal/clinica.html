@@ -1,31 +1,14 @@
 {% load static %}
 
 <html>
+  {% include "site_app/partials/head.html" %}
 
-<head>
-    <title>PetLife</title>
-    <meta name="description" content="Garanta uma vida longa e cheia de alegria para o seu melhor amigo">
 
-    <link rel="stylesheet" href="{% static 'site_app/css/style.css' %}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-</head>
 <body>
     
 
 
-  <header>
-    <a href="index.html">
-      <img src="{% static 'site_app/img/logo-white.svg' %}" alt="PetLife">
-    </a>
-    <nav>
-      <a href="index.html">Início</a>
-      <a href="clinica.html">Clínica</a>
-      <a href="farmacia.html">Farmácia</a>
-      <a href="duvidas.html">Dúvidas</a>
-    </nav>
-  </header>
+{% include "site_app/partials/header.html" %}
 
   <main>
     <section class id="clinica">
@@ -60,9 +43,9 @@
     <div>
       <strong class="titulo">Links rápidos</strong>
       <nav>
-        <a href="index.html">Início</a>
-        <a href="clinica.html">Clínica</a>
-        <a href="farmacia.html">Farmácia</a>
+        <a href="/">Início</a>
+        <a href="/clinica">Clínica</a>
+        <a href="/farmacia">Farmácia</a>
         <a href="duvidas.html">Dúvidas</a>
       </nav>
     </div>
