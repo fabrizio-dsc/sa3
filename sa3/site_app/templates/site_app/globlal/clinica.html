@@ -1,14 +1,15 @@
+{% load static %}
+
 <html>
 
 <head>
     <title>PetLife</title>
     <meta name="description" content="Garanta uma vida longa e cheia de alegria para o seu melhor amigo">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{% static 'site_app/css/style.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" 
-    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     
@@ -16,7 +17,7 @@
 
   <header>
     <a href="index.html">
-      <img src="img/logo-white.svg" alt="PetLife">
+      <img src="{% static 'site_app/img/logo-white.svg' %}" alt="PetLife">
     </a>
     <nav>
       <a href="index.html">Início</a>
@@ -46,13 +47,13 @@
             </ul>    
         </div>
 
-        <img src="img/clinic-img.svg" alt="" width="480" height="480">
+        <img src="{% static 'site_app/img/clinic-img.svg' %}" alt="" width="480" height="480">
     </section>
   </main>
 
   <footer>
     <div>
-      <img src="img/logo.svg" alt="PetLife">
+      <img src="{% static 'site_app/img/logo.svg' %}" alt="PetLife">
       <p>Cuidando com amor, vivendo com alegria: PetLife, onde a vida dos pets é mais feliz!</p>
     </div>
 
