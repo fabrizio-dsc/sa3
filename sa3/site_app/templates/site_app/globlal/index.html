@@ -1,7 +1,11 @@
+{% load static %}
+
 <html>
 
 <head>
   {% include "site_app/partials/head.html" %}
+
+  
 
   <body>
     
@@ -11,7 +15,7 @@
 
   <main>
     <section id="inicio">
-      <img src="img/start-img.svg" alt="AU Augo deu errado nessa imagem" width="580" height="580">
+      <img src="{% static 'site_app/img/start-img.svg' %}" alt="AU Augo deu errado nessa imagem" width="580" height="580">
 
       <div>
         <h1>Garanta uma vida longa e cheia de alegria para o seu melhor amigo</h1>
@@ -28,34 +32,10 @@
     </section >
   </main>
 
-  <footer>
-    <div>
-      <img src="img/logo.svg" alt="PetLife">
-      <p>Cuidando com amor, vivendo com alegria: PetLife, onde a vida dos pets é mais feliz!</p>
-    </div>
+    {% include "site_app/partials/footer.html" %}
 
-    <div>
-      <strong class="titulo">Links rápidos</strong>
-      <nav>
-        <a href="index.html">Início</a>
-        <a href="clinica.html">Clínica</a>
-        <a href="farmacia.html">Farmácia</a>
-        <a href="duvidas.html">Dúvidas</a>
-      </nav>
-    </div>
 
-    <div>
-      <strong class="titulo">Encontre-nos</strong>
-      <p>WhatsApp: <a href="https://wa.me/552298765-4321" target="_blank">(22) 98765-4321</a></p>
-      <p>Email: <a href="mailto:contato@petlife.com">contato@petlife.com.br</a></p>
-      <p>Endereço: Av. 7 de Setembro, nº 42, Centro</p>
-    </div>
-
-  </footer>
-  <div class="copyright">
-    Desenvolvido por <a href="https://github.com/fabrizio-dsc" target="_blank">@pomboy_hun</a>
-    na atividade SA3 Desenvolvimento de Sistema
-  </div>
+    {% include "site_app/partials/copyright.html" %}
   
 </body>
 

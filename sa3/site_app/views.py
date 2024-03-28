@@ -6,3 +6,9 @@ def home(request):
 
 def clinica(request):
     return render (request, "site_app/globlal/clinica.html")
+
+def farmacia(request):
+    return render (request, "site_app/globlal/farmacia.html")
+
+def duvidas(request):
+    return render (request, "site_app/globlal/duvidas.html")
